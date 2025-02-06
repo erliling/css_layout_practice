@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .leftfix {
+        float: left;
+      }
+      .rightfix {
+        float: right;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container {
+        width: 960px;
+        margin: 0;
+        text-align: center;
+        margin: 0 auto;
+        /* margin-top: 50px; */
+      }
+      .logo {
+        width: 200px;
+        height: 80px;
+        background-color: pink;
+      }
+      .banner1 {
+        width: 540px;
+        height: 80px;
+        background-color: skyblue;
+        margin: 0 10px;
+      }
+      .banner2 {
+        width: 200px;
+        height: 80px;
+        background-color: olive;
+      }
+      .menu {
+        width: 960px;
+        height: 30px;
+        margin: 10px 0;
+        background-color: yellowgreen;
+      }
+      .show1 {
+        width: 370px;
+        height: 200px;
+        margin-right: 10px;
+        background-color: pink;
+      }
+      .show2 {
+        width: 180px;
+        height: 200px;
+        margin-top: 10px;
+        margin-right: 10px;
+        background-color: skyblue;
+      }
+      .show3 {
+        width: 200px;
+        height: 130px;
+        background-color: olive;
+      }
+      .show3margin {
+        margin: 10px 0;
+      }
+      .footer {
+        width: 960px;
+        height: 60px;
+        margin-top: 10px;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clearfix">
+        <div class="logo leftfix"></div>
+        <div class="banner1 leftfix"></div>
+        <div class="banner2 leftfix"></div>
+      </div>
+      <div class="menu"></div>
+      <div class="clearfix">
+        <div class="column1 leftfix">
+          <div class="row1 clearfix">
+            <div class="show1 leftfix"></div>
+            <div class="show1 leftfix"></div>
+          </div>
+          <div class="row2 clearfix">
+            <div class="show2 leftfix"></div>
+            <div class="show2 leftfix"></div>
+            <div class="show2 leftfix"></div>
+            <div class="show2 leftfix"></div>
+          </div>
+        </div>
+        <div class="column2 leftfix">
+          <div class="show3"></div>
+          <div class="show3 show3margin"></div>
+          <div class="show3"></div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
