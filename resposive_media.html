@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1200px)"
+      href="./mediumhuge.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and ((min-width: 992px) and (max-width: 1200px))"
+      href="./mediumbig.css"
+    />
+    <style>
+      @media screen and (max-width: 768px) {
+        h1 {
+          background-color: orange;
+        }
+      }
+
+      @media screen and ((min-width: 768px) and (max-width: 992px)) {
+        h1 {
+          background-color: olive;
+        }
+      }
+
+      @media print {
+        h1 {
+          /* background-color: pink; */
+          background-image: linear-gradient(30deg, pink, blue);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Erli Ling</h1>
+    </div>
+  </body>
+</html>
