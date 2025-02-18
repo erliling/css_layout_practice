@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .line1 {
+        width: 100%;
+        height: 200px;
+        background-color: lightblue;
+      }
+      .line2 {
+        width: 100%;
+        height: 200px;
+        background-color: lightpink;
+      }
+      /* becareful to put too much position or layout css in container */
+      /* .container {
+        width: 1200px;
+        height: 200px;
+        background-color: lightgoldenrodyellow;
+        margin: 0 auto;
+      } */
+      .line2 .container {
+        width: 1200px;
+        height: 200px;
+        background-color: lightgreen;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line1">
+      <div class="container"></div>
+    </div>
+    <div class="line2">
+      <div class="container"></div>
+    </div>
+  </body>
+</html>
